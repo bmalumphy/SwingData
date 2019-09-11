@@ -1,0 +1,6 @@
+framework module Pods_Swing_DataTests {
+  umbrella header "Pods-Swing DataTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
