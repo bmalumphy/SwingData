@@ -61,7 +61,7 @@ class Swing_DataTests: XCTestCase {
         XCTAssertEqual(845, swingData.backSearchContinuityWithinRange(data: wy, indexBegin: 0, indexEnd: wy.count-1, thresholdLo: 29, thresholdHi: 150, winLength: 20))
         
         //searchContinuityAboveValueTwoSignals tests
-        XCTAssertEqual(891, swingData.searchContinuityAboveValueTwoSignals(data1: wx, data2: wy, indexBegin: 0, indexEnd: wx.count-1, threshold1: 10, threshhold2: 20, winLength: 5))
+        XCTAssertEqual(891, swingData.searchContinuityAboveValueTwoSignals(data1: wx, data2: wy, indexBegin: 0, indexEnd: wx.count-1, threshold1: 10, threshold2: 20, winLength: 5))
         
         //searchMultipContinuityWithinRange tests
         XCTAssertEqual([845, 864], swingData.searchMultiContinuityWithinRange(data: wy, indexBegin: 0, indexEnd: wx.count-1, thresholdLo: 29, thresholdHi: 150, winLength: 20))

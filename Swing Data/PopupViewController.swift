@@ -64,7 +64,9 @@ class PopupViewController: UIViewController {
         let data2 = LineChartData() //This is the object that will be added to the chart
         data2.addDataSet(line2) //Adds the line to the dataSet
         
-        
+        line1.drawCirclesEnabled = false
+
+        line2.drawCirclesEnabled = false
         velocityChartView.data = data2 //finally - it adds the chart data to the chart and causes an update
         velocityChartView.chartDescription?.text = "Net Velocity of Bat" // Here we set the description for the graph
         self.impactLabel.text = "~"+String(self.impactTime)
